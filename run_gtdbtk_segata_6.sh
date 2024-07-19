@@ -1,0 +1,1 @@
+gtdbtk classify_wf -x fa --cpus 20 --pplacer_cpus 20 --tmpdir gtdbtk_temp_files/ --out_dir GTDBTK_Output_Files_Segata_Genomes/GTDBTK_Output_Files_Segata_Genomes_6/ --genome_dir Segata_Human_Microbiome_Genomes/Segata_Human_Microbiome_Genomes_6/

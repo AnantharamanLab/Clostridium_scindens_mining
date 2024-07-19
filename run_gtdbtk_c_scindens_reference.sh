@@ -1,0 +1,1 @@
+gtdbtk classify_wf -x fna --cpus 20 --pplacer_cpus 20 --tmpdir gtdbtk_temp_files/ --out_dir GTDBTK_Output_Files_Clostridium_scindens_Reference/ --genome_dir Clostridium_scindens_NCBI_reference_genomes/

@@ -1,0 +1,1 @@
+checkm lineage_wf Clostridium_scindens_genomes_final/ Clostridium_scindens_genomes_final_checkM -f Clostridium_scindens_genomes_final_checkM_data.tsv --tab_table --tmpdir tmp_checkm_folder/ -t 10 --pplacer_threads 10 -x fasta
