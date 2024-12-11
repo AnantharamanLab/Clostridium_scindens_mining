@@ -16,7 +16,9 @@ Experimentally-verified amino acid sequences for the proteins BaiA_2, BaiCD, Bai
 To generate trusted cutoffs for each of the proteins, one amino acid sequence for each of the proteins was extracted and queried against the NCBI nr protein database using the NCBI blastp suite. For each protein, the sequences for the top 500 hits from the BLAST output were downloaded. The previously-generated HMM profiles were queried against the obtained BLAST sequences for each protein sequence using hmmsearch with default parameters. The score used as a trusted cutoff was identified based on the largest changes in score from the hmmsearch outputs. The average of the two scores that constitute the largest drop in number were averaged to generate the trusted cutoffs. For 12alpha-HSDH, there was no clear large drop in score identified from the hmmsearch outputs, so no trusted cutoff was added to the HMM profile. For BaiH and BaiB, there were two large drops in score consecutively, so these three score values were averaged to generate the trusted cutoff. 
 
 ###  Step 6. Identify Protein Sequences in _C. scindens_ Genomes
-The 224 identified _C. scindens_ genomes were translated into amino acid sequences using Prodigal (version 2.6.3). The generated HMM profiles were queried against the amino acid sequences for the 224 genomes using hmmsearch of the HMMER package with the flag --cut_tc. 
+The 224 identified _C. scindens_ genomes were translated into amino acid sequences using Prodigal (version 2.6.3). The generated HMM profiles were queried against the amino acid sequences for the 224 genomes using hmmsearch of the HMMER package with the flag --cut_tc.
+
+All commands used in these analyses are provided in shell scripts in the scripts folder. Additional custom python scripts used for cleaning blast outputs and conversion of gff to fasta files are also provided in the same folder.
 
 ##### References
 1. Zeng, S. et al. A compendium of 32,277 metagenome-assembled genomes and over 80 million genes from the early-life human gut microbiome. Nat Commun 13, 5139 (2022).
